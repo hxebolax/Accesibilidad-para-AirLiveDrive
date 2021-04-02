@@ -1,7 +1,14 @@
+# -*- coding: utf-8 -*-
+# Copyright (C) 2021 Héctor J. Benítez Corredera <xebolax@gmail.com>
+# This file is covered by the GNU General Public License.
+
 import addonHandler
 import appModuleHandler
 import controlTypes
 from NVDAObjects.UIA import UIA
+
+# Línea para definir la traducción
+addonHandler.initTranslation()
 
 class AppModule(appModuleHandler.AppModule):
 	def event_NVDAObject_init(self, obj):
@@ -13,7 +20,7 @@ class AppModule(appModuleHandler.AppModule):
 					try:
 						obj.name = obj.getChild(1).name
 						if obj.name == "":
-							obj.name = "Importar / Exportar"
+							obj.name = _("Importar / Exportar")
 					except:
 						try:
 							obj.name = obj.getChild(0).getChild(1).name
@@ -22,19 +29,19 @@ class AppModule(appModuleHandler.AppModule):
 
 			if obj.role == controlTypes.ROLE_LIST: # Para los encabezados de de los listbox
 				if obj.name == 'Menu items':
-					obj.name = "Menú"
+					obj.name = _("Menú")
 				elif obj.name == 'Option items':
-					obj.name = "Opciones"
+					obj.name = _("Opciones")
 				elif obj.name == "":
-					obj.name = "discos"
+					obj.name = _("Discos")
 
 			if obj.role == controlTypes.ROLE_BUTTON: # Para los botones que tienen etiqueta
 				if obj.name == '':
 					try:
-						if obj.getChild(0).name == 'Exportar Discos':
+						if obj.getChild(0).name == _('Exportar Discos'):
 							pass
 						else:
-							if obj.getChild(0).name == 'Importar Discos':
+							if obj.getChild(0).name == _('Importar Discos'):
 								pass
 							else:
 								obj.name = obj.getChild(0).name
@@ -47,15 +54,18 @@ class AppModule(appModuleHandler.AppModule):
 						pass
 
 			if obj.UIAAutomationId == "buttonBrowse": # Botones sin etiquetas
-				obj.name = "Explorar"
+				obj.name = _("Explorar")
 			elif obj.UIAAutomationId == "buttonSettings":
-				obj.name = "Configuración disco"
+				obj.name = _("Configuración disco")
 			elif obj.UIAAutomationId == "buttonRemove":
-				obj.name = "Remover"
+				obj.name = _("Eliminar disco")
 			elif obj.UIAAutomationId == "buttonUp":
-				obj.name = "Subir posición el disco en la lista"
+				obj.name = _("Subir posición el disco en la lista")
 			elif obj.UIAAutomationId == "buttonDown":
-				obj.name = "Bajar posición el disco en la lista"
+				obj.name = _("Bajar posición el disco en la lista")
 
+			if obj.role == controlTypes.ROLE_EDITABLETEXT: # Para los campos de texto
+				temp = obj._get_previous()
+				obj.name = temp.name
 		except AttributeError:
 			pass
