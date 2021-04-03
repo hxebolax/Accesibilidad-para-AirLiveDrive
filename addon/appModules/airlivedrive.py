@@ -10,6 +10,21 @@ from NVDAObjects.UIA import UIA
 # Línea para definir la traducción
 addonHandler.initTranslation()
 
+def searchAmongTheChildren(id, into):
+	if not into:
+		return(None)
+	key, value = id
+	obj = into.firstChild
+	if hasattr(obj, "IA2Attributes") and key in obj.IA2Attributes.keys():
+		if re.match(value, obj.IA2Attributes[key]):
+			return(obj)
+	while obj:
+		if hasattr(obj, "IA2Attributes") and key in obj.IA2Attributes.keys():
+			if re.match(value, obj.IAccessibleAccName[key]):
+				break
+		obj = obj.next
+	return(obj)
+
 class AppModule(appModuleHandler.AppModule):
 	def event_NVDAObject_init(self, obj):
 		if not isinstance(obj, UIA): return
@@ -65,7 +80,17 @@ class AppModule(appModuleHandler.AppModule):
 				obj.name = _("Bajar posición el disco en la lista")
 
 			if obj.role == controlTypes.ROLE_EDITABLETEXT: # Para los campos de texto
-				temp = obj._get_previous()
-				obj.name = temp.name
+				try:
+					temp = obj._get_previous()
+					obj.name = temp.name
+				except:
+					pass
+
+			if obj.role == controlTypes.ROLE_CHECKBOX: # Para los checkbox
+				try:
+					obj.name = obj.getChild(1).name
+				except:
+					pass
+
 		except AttributeError:
 			pass
