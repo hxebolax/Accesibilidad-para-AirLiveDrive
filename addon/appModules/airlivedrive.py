@@ -10,21 +10,6 @@ from NVDAObjects.UIA import UIA
 # Línea para definir la traducción
 addonHandler.initTranslation()
 
-def searchAmongTheChildren(id, into):
-	if not into:
-		return(None)
-	key, value = id
-	obj = into.firstChild
-	if hasattr(obj, "IA2Attributes") and key in obj.IA2Attributes.keys():
-		if re.match(value, obj.IA2Attributes[key]):
-			return(obj)
-	while obj:
-		if hasattr(obj, "IA2Attributes") and key in obj.IA2Attributes.keys():
-			if re.match(value, obj.IAccessibleAccName[key]):
-				break
-		obj = obj.next
-	return(obj)
-
 class AppModule(appModuleHandler.AppModule):
 	def event_NVDAObject_init(self, obj):
 		if not isinstance(obj, UIA): return
@@ -38,7 +23,7 @@ class AppModule(appModuleHandler.AppModule):
 							obj.name = _("Importar / Exportar")
 					except:
 						try:
-							obj.name = obj.getChild(0).getChild(1).name
+							obj.name = obj.getChild(0).getChild(1).name + " - " +obj.getChild(0).getChild(2).name
 						except:
 							pass
 
@@ -91,6 +76,13 @@ class AppModule(appModuleHandler.AppModule):
 					obj.name = obj.getChild(1).name
 				except:
 					pass
+
+			if obj.role == controlTypes.ROLE_UNKNOWN: # No repetir item en la subidas
+				obj.name = obj.getChild(0).value
+
+			if obj.role == controlTypes.ROLE_DATAITEM: # Eliminar info molesta en subidas
+				if obj.name == 'AirLiveDrive.Producers.ClientToken':
+					obj.name = ""
 
 		except AttributeError:
 			pass
