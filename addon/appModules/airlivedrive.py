@@ -23,7 +23,8 @@ class AppModule(appModuleHandler.AppModule):
 							obj.name = _("Importar / Exportar")
 					except:
 						try:
-							obj.name = obj.getChild(0).getChild(1).name + " - " +obj.getChild(0).getChild(2).name
+							if obj.role == controlTypes.ROLE_LISTITEM:
+								obj.name = obj.getChild(0).getChild(1).name + " - " +obj.getChild(0).getChild(2).name
 						except:
 							pass
 
@@ -76,9 +77,6 @@ class AppModule(appModuleHandler.AppModule):
 					obj.name = obj.getChild(1).name
 				except:
 					pass
-
-			if obj.role == controlTypes.ROLE_UNKNOWN: # No repetir item en la subidas
-				obj.name = obj.getChild(0).value
 
 			if obj.role == controlTypes.ROLE_DATAITEM: # Eliminar info molesta en subidas
 				if obj.name == 'AirLiveDrive.Producers.ClientToken':
