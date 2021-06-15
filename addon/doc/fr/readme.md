@@ -7,8 +7,19 @@ Avec cette extension, la plupart des éléments sont étiquetés en rendant l'ap
 ## Traducteurs et contributeurs:
 
 * Français: Rémy Ruiz
+* Portugais: Équipe Portugaise NVDA (Ângelo Abrantes et Rui Fontes)
 
 # Journal des changements.
+## Version 0.3.
+
+* Validations pour la dernière version 1.9.1.0
+
+* La section monter est améliorée.
+
+Maintenant, ne se répétera pas l'élément que nous avons sélectionné.
+
+* Compatible avec NVDA 2021.1
+
 ## Version 0.2.
 
 * Ajout de la langue française.

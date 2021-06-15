@@ -7,6 +7,7 @@ Con este complemento se etiquetan la mayoría de elementos haciendo mucho más e
 ## Traductores y colaboradores:
 
 * Francés: Rémy Ruiz
+* Portugués : Equipo  portugués  de NVDA (Ângelo Abrantes y Rui Fontes)
 
 # Registro de cambios.
 ## Versión 0.3.

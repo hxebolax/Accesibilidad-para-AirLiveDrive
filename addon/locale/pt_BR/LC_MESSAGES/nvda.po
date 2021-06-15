@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: AirLiveDrive\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2021-04-08 08:01+0200\n"
+"PO-Revision-Date: 2021-06-03 22:23+0100\n"
+"Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
+"Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes e Rui Fontes\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: addon\appModules\airlivedrive.py:38
+msgid "Importar / Exportar"
+msgstr "Importar / Exportar"
+
+#: addon\appModules\airlivedrive.py:47
+msgid "Menú"
+msgstr "Menu"
+
+#: addon\appModules\airlivedrive.py:49
+msgid "Opciones"
+msgstr "Opções"
+
+#: addon\appModules\airlivedrive.py:51
+msgid "Discos"
+msgstr "Discos"
+
+#: addon\appModules\airlivedrive.py:56
+msgid "Exportar Discos"
+msgstr "Exportar Discos "
+
+#: addon\appModules\airlivedrive.py:59
+msgid "Importar Discos"
+msgstr "Importar Discos"
+
+#. Botones sin etiquetas
+#: addon\appModules\airlivedrive.py:72
+msgid "Explorar"
+msgstr "Explorar"
+
+#: addon\appModules\airlivedrive.py:74
+msgid "Configuración disco"
+msgstr "Configuração do disco"
+
+#: addon\appModules\airlivedrive.py:76
+msgid "Eliminar disco"
+msgstr "Apagar disco"
+
+#: addon\appModules\airlivedrive.py:78
+msgid "Subir posición el disco en la lista"
+msgstr "Subir a posição do disco na lista"
+
+#: addon\appModules\airlivedrive.py:80
+msgid "Bajar posición el disco en la lista"
+msgstr "Mover o disco para baixo na lista"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "Accesibilidad para AirLiveDrive"
+msgstr "Acessibilidade para AirLiveDrive"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Etiqueta elementos de la aplicación AirLiveDrive para NVDA"
+msgstr "Etiqueta os Elementos da aplicação AirLiveDrive para o NVDA"
+
+#~ msgid "&Application Dictionary..."
+#~ msgstr "&Application Dictionary..."
+
+#~ msgid "A dialog where you can set application-specific dictionary by adding dictionary entries to the list"
+#~ msgstr "Une boîte de dialogue dans laquelle vous pouvez définir un dictionnaire spécifique à l'application en ajoutant des entrées  au dictionnaire à la liste"
+
+#~ msgid "Dictionary for {arg0}"
+#~ msgstr "Dictionnaire pour {arg0}"
+
+#~ msgid "Shows the application-specific dictionary dialog"
+#~ msgstr "Afficher le dialogue du dictionnaire spécifique à l'application"
+
+#~ msgid "You have installed an incompatible version of the add-on. Do you want to uninstall the incompatible version?"
+#~ msgstr "Vous avez installé une version incompatible de cette extension. Voulez-vous désinstaller la version incompatible ?"
+
+#~ msgid "Uninstall incompatible add-on"
+#~ msgstr "Désinstaller l'extension incompatible"
+
+#~ msgid "Application dictionary"
+#~ msgstr "Application dictionary"
+
+#~ msgid "Allows creation of application-specific dictionaries. Use the command \"NVDA+Shift+p\" to access the dictionary for the current application."
+#~ msgstr "Permet la création de dictionnaires spécifiques à l'application. Utilisez la commande NVDA+Maj+P pour accéder au dictionnaire de l'application en cours."
+
+#~ msgid "Application Dictionary"
+#~ msgstr "Application Dictionary"
+
+#~ msgid ""
+#~ "allows creation of application-specific dictionaries.\n"
+#~ "Use the shortcut NVDA+shift+p to access the dictionary for the current application."
+#~ msgstr ""
+#~ "permet la création de dictionnaires spécifiques à l'application.\n"
+#~ "Utilisez le raccourci NVDA+Maj+P pour accéder au dictionnaire de l'application en cours."
