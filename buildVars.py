@@ -20,14 +20,14 @@ addon_info = {
 	# Add-on summary, usually the user visible name of the addon.
 	# Translators: Summary for this add-on
 	# to be shown on installation and add-on information found in Add-ons Manager.
-	"addon_summary": _("Accesibilidad para AirLiveDrive"),
+	"addon_summary": _("AirAccesibility"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description": _("""Etiqueta elementos de la aplicación AirLiveDrive para NVDA"""),
+	"addon_description": _("""Hace más accesibles los productos AirExplorer y AirLiveDrive para NVDA"""),
 	# version
-	"addon_version": "0.3.1",
+	"addon_version": "1.0",
 	# Author(s)
-	"addon_author": u"Héctor J. Benítez Corredera <xebolax@gmail.com>",
+	"addon_author": u"Gerardo Kessler <ReaperYOtrasYerbas@gmail.com>, Héctor J. Benítez Corredera <xebolax@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url": "https://github.com/hxebolax/Accesibilidad-para-AirLiveDrive",
 	# Documentation file name

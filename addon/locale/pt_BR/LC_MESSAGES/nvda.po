@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AirLiveDrive\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2021-04-08 08:01+0200\n"
-"PO-Revision-Date: 2021-06-03 22:23+0100\n"
+"POT-Creation-Date: 2021-07-15 11:36+0200\n"
+"PO-Revision-Date: 2021-07-15 11:37+0200\n"
 "Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa portuguesa do NVDA: Ângelo Abrantes e Rui Fontes\n"
 "Language: pt_PT\n"
@@ -19,48 +19,78 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: addon\appModules\airlivedrive.py:38
+#. Translators: Añade la palabra porcentaje al valor
+#: addon\appModules\airexplorer.py:54
+msgid "{}; {} porciento"
+msgstr ""
+
+#. Translators: Anuncia que no hay datos
+#: addon\appModules\airexplorer.py:57
+msgid "Sin datos"
+msgstr ""
+
+#. Translators: Descripción del elemento en el diálogo gestos de entrada
+#: addon\appModules\airexplorer.py:62
+msgid "Activa el panel de cuentas"
+msgstr ""
+
+#. Translators: Descripción del elemento en el diálogo gestos de entrada
+#: addon\appModules\airexplorer.py:75
+msgid "Activa el panel de opciones"
+msgstr ""
+
+#. Translators: Descripción del elemento en el diálogo gestos de entrada
+#: addon\appModules\airexplorer.py:88
+msgid "Se mueve al siguiente de los 4 elementos posibles"
+msgstr ""
+
+#. Translators: Descripción del elemento en el diálogo gestos de entrada
+#: addon\appModules\airexplorer.py:100
+msgid "Se mueve al anterior de los 4 elementos posibles"
+msgstr ""
+
+#: addon\appModules\airlivedrive.py:23
 msgid "Importar / Exportar"
 msgstr "Importar / Exportar"
 
-#: addon\appModules\airlivedrive.py:47
+#: addon\appModules\airlivedrive.py:33
 msgid "Menú"
 msgstr "Menu"
 
-#: addon\appModules\airlivedrive.py:49
+#: addon\appModules\airlivedrive.py:35
 msgid "Opciones"
 msgstr "Opções"
 
-#: addon\appModules\airlivedrive.py:51
+#: addon\appModules\airlivedrive.py:37
 msgid "Discos"
 msgstr "Discos"
 
-#: addon\appModules\airlivedrive.py:56
+#: addon\appModules\airlivedrive.py:42
 msgid "Exportar Discos"
 msgstr "Exportar Discos "
 
-#: addon\appModules\airlivedrive.py:59
+#: addon\appModules\airlivedrive.py:45
 msgid "Importar Discos"
 msgstr "Importar Discos"
 
 #. Botones sin etiquetas
-#: addon\appModules\airlivedrive.py:72
+#: addon\appModules\airlivedrive.py:58
 msgid "Explorar"
 msgstr "Explorar"
 
-#: addon\appModules\airlivedrive.py:74
+#: addon\appModules\airlivedrive.py:60
 msgid "Configuración disco"
 msgstr "Configuração do disco"
 
-#: addon\appModules\airlivedrive.py:76
+#: addon\appModules\airlivedrive.py:62
 msgid "Eliminar disco"
 msgstr "Apagar disco"
 
-#: addon\appModules\airlivedrive.py:78
+#: addon\appModules\airlivedrive.py:64
 msgid "Subir posición el disco en la lista"
 msgstr "Subir a posição do disco na lista"
 
-#: addon\appModules\airlivedrive.py:80
+#: addon\appModules\airlivedrive.py:66
 msgid "Bajar posición el disco en la lista"
 msgstr "Mover o disco para baixo na lista"
 
@@ -68,14 +98,17 @@ msgstr "Mover o disco para baixo na lista"
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
 #: buildVars.py:23
-msgid "Accesibilidad para AirLiveDrive"
-msgstr "Acessibilidade para AirLiveDrive"
+msgid "AirAccesibility"
+msgstr ""
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
-msgid "Etiqueta elementos de la aplicación AirLiveDrive para NVDA"
-msgstr "Etiqueta os Elementos da aplicação AirLiveDrive para o NVDA"
+msgid "Hace más accesibles los productos AirExplorer y AirLiveDrive para NVDA"
+msgstr ""
+
+#~ msgid "Etiqueta elementos de la aplicación AirLiveDrive para NVDA"
+#~ msgstr "Etiqueta os Elementos da aplicação AirLiveDrive para o NVDA"
 
 #~ msgid "&Application Dictionary..."
 #~ msgstr "&Application Dictionary..."
