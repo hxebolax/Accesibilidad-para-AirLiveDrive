@@ -1,108 +1,107 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the 'AirLiveDrive' package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: AirLiveDrive\n"
+"Project-Id-Version: 'AirLiveDrive' '1.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2021-07-15 14:02+0200\n"
-"PO-Revision-Date: 2021-07-16 20:04+0200\n"
-"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
-"Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
-"Language: fr\n"
+"POT-Creation-Date: 2021-07-15 12:43+0200\n"
+"PO-Revision-Date: 2021-07-16 14:52+0200\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.4.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
 
 #. Translators: Añade la palabra porcentaje al valor
 #: addon\appModules\airexplorer.py:54
 msgid "{}; {} porciento"
-msgstr "{}; {} pourcent"
+msgstr ""
 
 #. Translators: Anuncia que no hay datos
 #: addon\appModules\airexplorer.py:57
 msgid "Sin datos"
-msgstr "Aucune donnée"
+msgstr ""
 
 #. Translators: Descripción del elemento en el diálogo gestos de entrada
 #: addon\appModules\airexplorer.py:62
 msgid "Activa el panel de cuentas"
-msgstr "Activer le panneau de comptes"
+msgstr ""
 
 #. Translators: Descripción del elemento en el diálogo gestos de entrada
 #: addon\appModules\airexplorer.py:75
 msgid "Activa el panel de opciones"
-msgstr "Activer le panneau d'options"
+msgstr ""
 
 #. Translators: Descripción del elemento en el diálogo gestos de entrada
 #: addon\appModules\airexplorer.py:88
 msgid "Se mueve al siguiente de los 4 elementos posibles"
-msgstr "Se déplacer au suivant des 4 éléments possibles"
+msgstr ""
 
 #. Translators: Descripción del elemento en el diálogo gestos de entrada
 #: addon\appModules\airexplorer.py:100
 msgid "Se mueve al anterior de los 4 elementos posibles"
-msgstr "Se déplacer au précédent des 4 éléments possibles"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:23
 msgid "Importar / Exportar"
-msgstr "Importer / Exporter"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:33
 msgid "Menú"
-msgstr "Menu"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:35
 msgid "Opciones"
-msgstr "Options"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:37
 msgid "Discos"
-msgstr "Disques"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:42
 msgid "Exportar Discos"
-msgstr "Exporter les disques"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:45
 msgid "Importar Discos"
-msgstr "Importer les disques"
+msgstr ""
 
 #. Botones sin etiquetas
 #: addon\appModules\airlivedrive.py:58
 msgid "Explorar"
-msgstr "Parcourir"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:60
 msgid "Configuración disco"
-msgstr "Configuration du disque"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:62
 msgid "Eliminar disco"
-msgstr "Supprimer le disque"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:64
 msgid "Subir posición el disco en la lista"
-msgstr "Monter de position le disque dans la liste"
+msgstr ""
 
 #: addon\appModules\airlivedrive.py:66
 msgid "Bajar posición el disco en la lista"
-msgstr "Descendre de position le disque dans la liste"
+msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
 #: buildVars.py:23
 msgid "AirAccessibility"
-msgstr "AirAccessibility"
+msgstr ""
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
 msgid "Hace más accesibles los productos AirExplorer y AirLiveDrive para NVDA"
-msgstr "Rend plus accessibles les produits AirExplorer et AirLiveDrive pour NVDA"
+msgstr ""
