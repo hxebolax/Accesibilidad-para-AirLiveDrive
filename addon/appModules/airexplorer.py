@@ -17,25 +17,31 @@ import addonHandler
 # Lína de traducción
 addonHandler.initTranslation()
 
+def getRole(attr):
+	if hasattr(controlTypes, 'ROLE_BUTTON'):
+		return getattr(controlTypes, f'ROLE_{attr}')
+	else:
+		return getattr(controlTypes, f'Role.{attr}')
+
 class AppModule(appModuleHandler.AppModule):
 
 	category = "AirExplorer"
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
 		try:
-			if obj.name == None and obj.role == controlTypes.ROLE_PANE:
+			if obj.name == None and obj.role == getRole('PANE'):
 				clsList.insert(0, CloudOptions)
 		except:
 			pass
 
 	def event_gainFocus(self, obj, nextHandler):
 		try:
-			if obj.name == '' and obj.role == controlTypes.ROLE_DOCUMENT:
+			if obj.name == '' and obj.role == getRole('DOCUMENT'):
 				obj.simplePrevious.doAction()
 				PlaySound("C:/Windows/Media/Windows Battery Critical.wav", SND_FILENAME | SND_ASYNC)
 				nextHandler()
-			elif obj.name == None and obj.role == controlTypes.ROLE_PANE:
-				obj.name = "{}, {}".format(obj.parent.next.children[3].children[0].children[5].name, obj.parent.next.next.next.children[3].children[2].name)
+			elif obj.name == None and obj.role == getRole('PANE'):
+				obj.name = 'Panel de herramientas'
 				nextHandler()
 			else:
 				nextHandler()
@@ -89,7 +95,7 @@ class AppModule(appModuleHandler.AppModule):
 		gesture="kb:pagedown")
 	def script_nextElement(self, gesture):
 		fc = api.getFocusObject()
-		if fc.role != controlTypes.ROLE_LISTITEM and fc.role != controlTypes.ROLE_LIST:
+		if fc.role != getRole('LISTITEM') and fc.role != getRole('LIST'):
 			manager.emulateGesture(KeyboardInputGesture.fromName("tab"))
 		else:
 			PlaySound("C:/Windows/Media/Windows Information Bar.wav", SND_ASYNC | SND_FILENAME)
@@ -101,26 +107,28 @@ class AppModule(appModuleHandler.AppModule):
 		gesture="kb:pageup")
 	def script_previousElement(self, gesture):
 		fc = api.getFocusObject()
-		if fc.role != controlTypes.ROLE_TAB:
+		if fc.role != getRole('TAB'):
 			manager.emulateGesture(KeyboardInputGesture.fromName("shift+tab"))
 		else:
 			PlaySound("C:/Windows/Media/Windows Information Bar.wav", SND_ASYNC | SND_FILENAME)
 
 class CloudOptions():
 
-	toolsList = []
-	x = 0
-
 	def initOverlayClass(self):
+		self.toolsList = []
+		self.x = 0
+		self.getList()
+
+	def getList(self):
 		try:
-				self.bindGestures({"kb:rightArrow":"next", "kb:leftArrow":"previous", "kb:space":"press"})
+				self.bindGestures({"kb:rightArrow":"next", "kb:leftArrow":"previous", "kb:space":"press", "kb:s":"availableSpace"})
 				self.toolsList = [obj for obj in self.parent.next.next.children[3].children if obj.name != "" and obj.states != {32, 16777216}]
 		except:
 			pass
 
 	def script_next(self, gesture):
 		self.x+=1
-		if self.x < (len(self.toolsList) - 1):
+		if self.x < (len(self.toolsList)):
 			message(self.toolsList[self.x].name)
 		else:
 			self.x = 0
@@ -131,9 +139,23 @@ class CloudOptions():
 		if self.x >= 0:
 			message(self.toolsList[self.x].name)
 		else:
-			self.x = len(self.toolsList) - 2
+			self.x = len(self.toolsList) - 1
 			message(self.toolsList[self.x].name)
 
 	def script_press(self, gesture):
-		message(self.toolsList[self.x].name)
-		self.toolsList[self.x].doAction()
+		try:
+			if self.x != len(self.toolsList)-1:
+				self.toolsList[self.x].doAction()
+				message(self.toolsList[self.x].name)
+			else:
+				self.toolsList[self.x].doAction()
+				self.getList()
+				message(self.toolsList[self.x].name)
+		except:
+			pass
+
+	def script_availableSpace(self, gesture):
+		try:
+			message(f'{self.parent.next.children[3].children[0].children[5].name}, {self.parent.next.next.next.children[3].children[2].name}')
+		except:
+			pass

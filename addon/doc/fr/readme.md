@@ -11,9 +11,10 @@ Si lorsque vous ouvrez le programme, il apparaît le panneau air explorer pro li
 * Se déplacer au précédent des 4 éléments possibles; Page suivante
 
 ## Panneau d'outils:
-En focalisant l'élément situé entre l'arborescence et la liste des fichiers l'extension étiquette l'objet avec le nom du nuage actuel et de l'espace disponible.
+
 Lorsque cet élément a le focus, les raccourcis clavier suivants sont activés:  
 
+* s; verbalise le nom du nuage actuel et de l'espace disponible.
 * Flèche droite; verbalise le nom de l'outil suivant
 * Flèche gauche; verbalise le nom de l'outil précédent
 * Barre d'espace; fait un appui sur le dernier outil nommé
