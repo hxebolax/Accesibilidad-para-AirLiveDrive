@@ -21,7 +21,7 @@ def getRole(attr):
 	if hasattr(controlTypes, 'ROLE_BUTTON'):
 		return getattr(controlTypes, f'ROLE_{attr}')
 	else:
-		return getattr(controlTypes, f'Role.{attr}')
+		return getattr(controlTypes.Role, attr)
 
 class AppModule(appModuleHandler.AppModule):
 

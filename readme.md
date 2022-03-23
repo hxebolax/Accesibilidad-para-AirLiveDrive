@@ -1,4 +1,5 @@
 # Air Explorer:
+
 Este es un módulo de aplicación muy simple que añade algunos pocos atajos de teclado y la simplificación de algunas acciones.  
 Si al abrir el programa aparece el cartel air explorer pro lifetime lice, el complemento lo cierra automáticamente y emite un sonido.
 
@@ -11,6 +12,7 @@ Si al abrir el programa aparece el cartel air explorer pro lifetime lice, el com
 * Moverse al anterior de los 4 elementos posibles; Avance página
 
 ## Panel de herramientas:
+
 Cuando este elemento tiene el foco se activan los siguientes atajos de teclado:  
 
 * s; verbaliza el nombre de la nube actual y su espacio disponible.
@@ -21,6 +23,7 @@ Cuando este elemento tiene el foco se activan los siguientes atajos de teclado:
 Nota: Algunas de estas opciones solo están disponibles en la versión pro.
 
 ## Movimiento entre el panel de pestañas y la lista de archivos:
+
 Con avance y retroceso de página nos desplazaremos entre 4 elementos siempre y cuando estemos en la pestaña con una nube activa.
 Esos  elementos son el panel de pestañas, la vista en árbol, el panel de herramientas, y la lista de archivos. Al llegar al tope de alguno de los extremos va a emitirse un sonido.  
 Con tabulador y shift tabulador nos desplazaremos normalmente entre los elementos, los atajos anteriores están pensados fundamentalmente para navegar entre los objetos más utilizados.  
@@ -37,12 +40,28 @@ Este complemento ofrece accesibilidad a la aplicación [AirLiveDrive.](https://w
 
 Con este complemento se etiquetan la mayoría de elementos haciendo mucho más entendible la aplicación.
 
+## Atajos del programa:
+
+F1: Si pulsamos esta tecla en la lista de discos nos dará el tamaño que queda libre y el tamaño total.
+
+Esta tecla puede cambiarse en gestos de entrada.
+
 # Traductores y colaboradores:
 
 * Francés: Rémy Ruiz
 * Portugués : Equipo  portugués  de NVDA (Ângelo Abrantes y Rui Fontes)
 
 # Registro de cambios.
+## Versión 1.2.
+
+* Añadida compatibilidad para NVDA 2022.1.
+
+* Agregada la posibilidad de saber el tamaño de un disco en AirLiveDrive.
+
+## Versión 1.1.
+
+* Mejoras de código en AirExplorer
+
 ## Versión 1.0.
 
 * Versión inicial.
