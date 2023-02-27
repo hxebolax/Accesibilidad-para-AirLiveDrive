@@ -7,7 +7,7 @@ from scriptHandler import script
 import api
 import controlTypes
 from ui import message
-from winsound import PlaySound, SND_FILENAME, SND_ASYNC
+from nvwave import playWaveFile
 from os import path
 from keyboardHandler import KeyboardInputGesture
 from inputCore import manager
@@ -17,36 +17,20 @@ import addonHandler
 # Lína de traducción
 addonHandler.initTranslation()
 
-def getRole(attr):
-	if hasattr(controlTypes, 'ROLE_BUTTON'):
-		return getattr(controlTypes, f'ROLE_{attr}')
-	else:
-		return getattr(controlTypes.Role, attr)
-
 class AppModule(appModuleHandler.AppModule):
 
 	category = "AirExplorer"
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
 		try:
-			if obj.name == None and obj.role == getRole('PANE'):
+			if obj.name == None and obj.role == controlTypes.Role.PANE:
 				clsList.insert(0, CloudOptions)
 		except:
 			pass
 
-	def event_gainFocus(self, obj, nextHandler):
-		try:
-			if obj.name == '' and obj.role == getRole('DOCUMENT'):
-				obj.simplePrevious.doAction()
-				PlaySound("C:/Windows/Media/Windows Battery Critical.wav", SND_FILENAME | SND_ASYNC)
-				nextHandler()
-			elif obj.name == None and obj.role == getRole('PANE'):
-				obj.name = 'Panel de herramientas'
-				nextHandler()
-			else:
-				nextHandler()
-		except:
-			nextHandler()
+	def event_NVDAObject_init(self, obj):
+		if obj.name == None and obj.role == controlTypes.Role.PANE:
+			obj.name = 'Panel de herramientas'
 
 	@script(gestures=[f"kb:control+{i}" for i in range(1, 10)])
 	def script_status(self, gesture):
@@ -95,10 +79,10 @@ class AppModule(appModuleHandler.AppModule):
 		gesture="kb:pagedown")
 	def script_nextElement(self, gesture):
 		fc = api.getFocusObject()
-		if fc.role != getRole('LISTITEM') and fc.role != getRole('LIST'):
+		if fc.role != controlTypes.Role.LISTITEM and fc.role != controlTypes.Role.LIST:
 			manager.emulateGesture(KeyboardInputGesture.fromName("tab"))
 		else:
-			PlaySound("C:/Windows/Media/Windows Information Bar.wav", SND_ASYNC | SND_FILENAME)
+			playWaveFile('C:/Windows/Media/Windows Information Bar.wav')
 
 	@script(
 		category = category,
@@ -107,10 +91,10 @@ class AppModule(appModuleHandler.AppModule):
 		gesture="kb:pageup")
 	def script_previousElement(self, gesture):
 		fc = api.getFocusObject()
-		if fc.role != getRole('TAB'):
+		if fc.role != controlTypes.Role.TAB:
 			manager.emulateGesture(KeyboardInputGesture.fromName("shift+tab"))
 		else:
-			PlaySound("C:/Windows/Media/Windows Information Bar.wav", SND_ASYNC | SND_FILENAME)
+			playWaveFile('C:/Windows/Media/Windows Information Bar.wav')
 
 class CloudOptions():
 

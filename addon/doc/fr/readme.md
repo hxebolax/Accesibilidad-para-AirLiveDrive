@@ -44,6 +44,16 @@ Avec cette extension, la plupart des éléments sont étiquetés en rendant l'ap
 * Portugais: Équipe Portugaise de NVDA (Ângelo Abrantes et Rui Fontes)
 
 # Journal des changements.
+## Version 1.2.
+
+* Ajout de compatibilité pour NVDA 2022.1.
+
+* Ajout de la possibilité de connaître la taille d'un disque dans AirLiveDrive.
+
+## Version 1.1.
+
+* Améliorations de code dans AirExplorer
+
 ## Version 1.0.
 
 * Version initiale.

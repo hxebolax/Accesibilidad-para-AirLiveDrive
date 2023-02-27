@@ -1,117 +1,113 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: AirLiveDrive\n"
+"Project-Id-Version: Air Erişilebilirliği 1.2\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2022-06-01 15:48+0200\n"
-"PO-Revision-Date: 2022-06-01 15:55+0200\n"
-"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
-"Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
-"Language: fr\n"
+"POT-Creation-Date: 2022-03-23 13:02+0100\n"
+"PO-Revision-Date: 2022-03-23 15:59+0300\n"
+"Last-Translator: Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language-Team: Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: Añade la palabra porcentaje al valor
 #: addon\appModules\airexplorer.py:60
 msgid "{}; {} porciento"
-msgstr "{}; {} pourcent"
+msgstr "yüzde {}; {}"
 
 #. Translators: Anuncia que no hay datos
 #: addon\appModules\airexplorer.py:63
 msgid "Sin datos"
-msgstr "Aucune donnée"
+msgstr "Veri yok"
 
 #. Translators: Descripción del elemento en el diálogo gestos de entrada
 #: addon\appModules\airexplorer.py:68
 msgid "Activa el panel de cuentas"
-msgstr "Activer le panneau de comptes"
+msgstr "Hesap panelini etkinleştir"
 
 #. Translators: Descripción del elemento en el diálogo gestos de entrada
 #: addon\appModules\airexplorer.py:81
 msgid "Activa el panel de opciones"
-msgstr "Activer le panneau d'options"
+msgstr "Seçenekler panelini etkinleştir"
 
 #. Translators: Descripción del elemento en el diálogo gestos de entrada
 #: addon\appModules\airexplorer.py:94
 msgid "Se mueve al siguiente de los 4 elementos posibles"
-msgstr "Se déplacer au suivant des 4 éléments possibles"
+msgstr "4 olası öğeden sonrakine gider"
 
 #. Translators: Descripción del elemento en el diálogo gestos de entrada
 #: addon\appModules\airexplorer.py:106
 msgid "Se mueve al anterior de los 4 elementos posibles"
-msgstr "Se déplacer au précédent des 4 éléments possibles"
+msgstr "4 olası öğeden öncekine gider"
 
 #: addon\appModules\airlivedrive.py:35
 msgid "Importar / Exportar"
-msgstr "Importer / Exporter"
+msgstr "İçe aktar / Dışa aktar"
 
 #: addon\appModules\airlivedrive.py:45
 msgid "Menú"
-msgstr "Menu"
+msgstr "Menü"
 
 #: addon\appModules\airlivedrive.py:47
 msgid "Opciones"
-msgstr "Options"
+msgstr "Seçenekler"
 
 #: addon\appModules\airlivedrive.py:49
 msgid "Discos"
-msgstr "Disques"
+msgstr "Diskler"
 
 #: addon\appModules\airlivedrive.py:54
 msgid "Exportar Discos"
-msgstr "Exporter les disques"
+msgstr "Diskleri Dışa Aktar"
 
 #: addon\appModules\airlivedrive.py:57
 msgid "Importar Discos"
-msgstr "Importer les disques"
+msgstr "Diskleri İçe Aktar"
 
 #. Botones sin etiquetas
 #: addon\appModules\airlivedrive.py:70
 msgid "Explorar"
-msgstr "Parcourir"
+msgstr "Gezgin"
 
 #: addon\appModules\airlivedrive.py:72
 msgid "Configuración disco"
-msgstr "Configuration du disque"
+msgstr "Disk Yapılandırması"
 
 #: addon\appModules\airlivedrive.py:74
 msgid "Eliminar disco"
-msgstr "Supprimer le disque"
+msgstr "diski sil"
 
 #: addon\appModules\airlivedrive.py:76
 msgid "Subir posición el disco en la lista"
-msgstr "Monter de position le disque dans la liste"
+msgstr "Diski listede yukarı taşı"
 
 #: addon\appModules\airlivedrive.py:78
 msgid "Bajar posición el disco en la lista"
-msgstr "Descendre de position le disque dans la liste"
+msgstr "Diski listede aşağı taşı"
 
 #. Translators: Descripción del elemento en el diálogo gestos de entrada
 #: addon\appModules\airlivedrive.py:103
 msgid "Verbaliza el tamaño de la unidad"
-msgstr "Verbalise la taille de l'unité"
+msgstr "Birim boyutunu sözlü olarak ifade et"
 
 #: addon\appModules\airlivedrive.py:111
 msgid "El foco tiene que estar en una unidad para saber su tamaño."
-msgstr "Le focus doit être sur une unité pour connaître sa taille."
+msgstr "Boyutu öğrenebilmek için bir disk seçili olmalıdır."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
 #: buildVars.py:23
 msgid "AirAccessibility"
-msgstr "AirAccessibility"
+msgstr "AirErişilebilirliği"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
 msgid "Hace más accesibles los productos AirExplorer y AirLiveDrive para NVDA"
-msgstr "Rend plus accessibles les produits AirExplorer et AirLiveDrive pour NVDA"
+msgstr "NVDA için AirExplorer ve AirLiveDrive ürünlerini daha erişilebilir hale getirir"

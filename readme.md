@@ -50,8 +50,14 @@ Esta tecla puede cambiarse en gestos de entrada.
 
 * Francés: Rémy Ruiz
 * Portugués : Equipo  portugués  de NVDA (Ângelo Abrantes y Rui Fontes)
+* Turco: : umut korkmaz
+* Árabe: Wafiq Taher
 
 # Registro de cambios.
+## Versión 1.3.
+
+* Añadida compatibilidad para NVDA 2023.1.
+
 ## Versión 1.2.
 
 * Añadida compatibilidad para NVDA 2022.1.
