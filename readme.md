@@ -1,15 +1,22 @@
 # Air Explorer:
 
-Este es un módulo de aplicación muy simple que añade algunos pocos atajos de teclado y la simplificación de algunas acciones.  
-Si al abrir el programa aparece el cartel air explorer pro lifetime lice, el complemento lo cierra automáticamente y emite un sonido.
+En las últimas versiones de la aplicación se han realizado modificaciones en la interfaz que complican el uso de la misma con lectores de pantalla.
+Este complemento etiqueta muchos botones sin nombre, agrega acceso a las opciones de la barra de herramientas, así como para la apertura de las nubes
 
 ## Atajos del complemento:
 
-* Activar el panel de cuentas; control + shift + c
-* Activar el panel de opciones; control + shift + o
+* verbalizar la opción de la barra de tareas según su posición; alt + números alfanuméricos del 1 al 9
+* Activar la opción de la barra de tareas según su posición; alt + números alfanuméricos del 1 al 9 2 veces rápidamente.
 * Conocer el estado de las últimas subidas o descargas según su posición; control + números alfanuméricos del 1 al 9
 * Moverse al siguiente de los 4 elementos posibles; Retroceso página
 * Moverse al anterior de los 4 elementos posibles; Avance página
+
+## Abrir una nube registrada
+
+Para abrir una nube hay que tabular en la pestaña principal hasta llegar hasta el elemento siguiente al botón etiquetado como Eliminar filtros.
+Al llegar a este elemento el NVDA no verbaliza nada en absoluto. Aquí nos desplazamos con flecha abajo 2 veces, y deberíamos encontrar las nubes en las que ya hayamos iniciado sesión.
+Para abrir la nube tan solo hay que pulsar intro, y esperar a que se abra.
+Si al navegar en la lista de nubes pulsamos flecha abajo en la última de la lista, el foco se pierde y se posiciona en la lista a filtrar.
 
 ## Panel de herramientas:
 
