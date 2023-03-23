@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""Hace más accesibles los productos AirExplorer y AirLiveDrive para NVDA"""),
 	# version
-	"addon_version": "1.3",
+	"addon_version": "1.4",
 	# Author(s)
 	"addon_author": u"Gerardo Kessler <ReaperYOtrasYerbas@gmail.com>, Héctor J. Benítez Corredera <xebolax@gmail.com>",
 	# URL for the add-on documentation support

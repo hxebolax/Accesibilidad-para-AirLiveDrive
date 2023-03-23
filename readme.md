@@ -61,6 +61,10 @@ Esta tecla puede cambiarse en gestos de entrada.
 * Árabe: Wafiq Taher
 
 # Registro de cambios.
+## Versión 1.4.
+
+* Solucionados problemas con AirExplorer y etiquetados muchos botones en la nueva versión.
+
 ## Versión 1.3.
 
 * Añadida compatibilidad para NVDA 2023.1.
