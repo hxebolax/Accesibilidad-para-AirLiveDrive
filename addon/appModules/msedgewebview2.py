@@ -4,14 +4,14 @@
 
 import appModuleHandler
 import api
+import controlTypes
 
 class AppModule(appModuleHandler.AppModule):
-	def __init__(self, *args, **kwargs):
-		super(AppModule, self).__init__(*args, **kwargs)
-		self.close()
-
-	def close(self):
+	def event_gainFocus(self, obj, nextHandler):
 		try:
-			api.getForegroundObject().previous.lastChild.doAction()
+			if obj.role == controlTypes.Role.DOCUMENT:
+				api.getForegroundObject().previous.lastChild.doAction()
+			else:
+				nextHandler()
 		except:
-			pass
+			nextHandler()
