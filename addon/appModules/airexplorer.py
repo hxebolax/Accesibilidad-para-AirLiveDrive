@@ -26,7 +26,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
 		try:
-			if obj.name == 'Renci.Properties.PredicateWrapperProperty':
+			if obj.childCount == 3 and obj.firstChild.role == controlTypes.Role.GRAPHIC:
 				clsList.insert(0, CloudList)
 			elif obj.name == None and obj.role == controlTypes.Role.PANE:
 				clsList.insert(0, CloudOptions)
