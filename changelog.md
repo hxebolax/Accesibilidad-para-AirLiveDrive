@@ -1,1 +1,2 @@
-* Añadida compatibilidad para NVDA 2023.1.
+* Añadida compatibilidad para NVDA 2024.2.
+* Solucionado problemas

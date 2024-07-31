@@ -1,5 +1,5 @@
 ﻿# -*- coding: utf-8 -*-
-# Copyright (C) 2021 Gerardo Kessler <ReaperYOtrasYerbas@gmail.com>
+# Copyright (C) 2024 Gerardo Kessler <gera.ar@yahoo.com>
 # This file is covered by the GNU General Public License.
 
 import appModuleHandler
@@ -14,7 +14,7 @@ from inputCore import manager
 import winUser
 import addonHandler
 
-# Lína de traducción
+# Línea de traducción
 addonHandler.initTranslation()
 
 sound= 'C:/Windows/Media/ding.wav'
